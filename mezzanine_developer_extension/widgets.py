@@ -18,8 +18,6 @@ class PlainWidget(forms.Textarea):
         """ Rendering the form field using a template.
         """
         value = value if value is not None else ''
-        print settings.CHECK_XHTML_SYNTAX, settings.CHECK_XHTML_INTERVAL
-        print settings.REFRESH_PREVIEW_AUTO, settings.REFRESH_PREVIEW_INTERVAL
         return mark_safe(render_to_string(self.template, {
             'value': value,
             'is_admin': 'hola',

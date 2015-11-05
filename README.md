@@ -41,9 +41,9 @@ Installation
 
 **mezzanine-developer-extension** should be installed using pip:
 
-    ```````````````
-    https://github.com/educalleja/mezzanine-developer-extension
-    ```````````````
+    
+    pip install git+https://github.com/educalleja/mezzanine-developer-extension
+    
 
 Quick start
 -----------
@@ -53,7 +53,7 @@ Quick start
     ```````````````
     INSTALLED_APPS = (
         ...,
-        'mezzanine_developer_extension'
+        "mezzanine_developer_extension"
     )
     ```````````````
     
@@ -69,11 +69,20 @@ Quick start
     ```````````````
     MIDDLEWARE_CLASSES = (
         ...
-        mezzanine_developer_extension.middleware.RedirectViews,
+        "mezzanine_developer_extension.middleware.RedirectViews",
         )
     ```````````````
 
-4. Include the app URLconf in your project urls.py like this::
+4. Add "mezzanine_developer_extension.context_processors.styles" to the TEMPLATE_CONTEXT_PROCESSORS setting:
+
+    ```````````````
+    TEMPLATE_CONTEXT_PROCESSORS = (
+        ...
+        "mezzanine_developer_extension.context_processors.styles",
+        )
+    ```````````````
+
+5. Include the app URLconf in your project urls.py like this::
 
     `("^%s" % settings.BLOG_SLUG, include("mezzanine_developer_extension.urls")),`
 
@@ -83,10 +92,11 @@ Quick start
 
       `("^", include("mezzanine.urls")),`
 
+6. Include
 
-5. Restart server.
+7. Restart server.
 
-6. Check the new widget to write blog post in the admin area.
+8. Check the new widget to write blog post in the admin area.
 
 Configuration
 --------------

@@ -2,3 +2,4 @@ include LICENSE
 include README.rst
 recursive-include mezzanine_developer_extension/static *
 recursive-include mezzanine_developer_extension/templates *
+recursive-include mezzanine_developer_extension/templatetags *
