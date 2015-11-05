@@ -1,0 +1,51 @@
+{% load staticfiles devfilters %}
+
+<div class="wmd-wrapper">
+  <div class="wmd-panel">
+    <div id="wmd-button-bar" class="wmd-button-bar">
+      <i class="fa fa-file-image-o" id="btnAddPicture"></i>
+      <i class="fa fa-search" id="btnPreview"></i>
+      {% if check_xhtml %}
+      <span class="formatinfo" id="formatinfo">Checking format...</span>
+      {% endif %}
+    </div>
+    <textarea id="wmd-input" class="wmd-input" name="content" rows="10">{{ value }}</textarea>
+    <div class="preview-wrapper">
+      <div>Preview:</div>
+      <div class="previewContainer" id="previewContainer">
+        Click on the preview button above the textarea to preview the content.  
+      </div>
+    </div>
+    
+  </div>
+  {% comment "About js" %}
+  This form is loaded in all mezzanine pages. The script shall only be loaded
+  in the admin area.
+  {% endcomment %}
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // Do nothing when we are rendering the textarea outside the admin panel
+      if (typeof ADMIN_URL == 'undefined') return;
+      $("#btnAddPicture").click(function(){
+        // Opening media library popup. 
+        mediaLibrary.open(developer_editor.addImageToEditor);
+      });
+      $("#btnPreview").click(developer_editor.preview_post);
+      {% if check_xhtml %}
+        // Checking xhtml only if the option is activated in settings.
+        setInterval(function () {
+          developer_editor.check_format_post();
+        },1000*{{ check_xhtml_s }});
+        developer_editor.check_format_post();
+      {% endif %}
+      {% if refresh_preview  %}
+        // Checking xhtml only if the option is activated in settings.
+        setInterval(function () {
+          developer_editor.preview_post();
+        },1000*{{ refresh_preview_s }});
+      {% endif %}
+      developer_editor.preview_post();
+
+    });
+   </script>
+</div>

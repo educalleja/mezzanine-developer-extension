@@ -1,0 +1,9 @@
+*.pyc
+*.sqlite3
+*.swp
+*.swo
+tags
+/MANIFEST
+/build
+/dist
+mezzanine_developer_extension.egg-info/

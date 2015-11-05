@@ -1,0 +1,12 @@
+<template tag="div" classes="terminal">
+	<div class="shell-wrap ubuntu">
+		<div class="shell-top-bar ubuntu">
+			<span>__TITLE__</span>
+		</div>
+		<div class="shell-body ubuntu">
+			<ul>
+				__COMMANDS__
+			</ul>
+		</div>
+	</div>
+</template>

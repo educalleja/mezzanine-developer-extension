@@ -1,0 +1,13 @@
+{% extends "blog/blog_post_detail.html" %}
+{% load mezzanine_tags comment_tags keyword_tags rating_tags i18n disqus_tags staticfiles devfilters%}
+
+{% block extra_css %}
+	<link rel="stylesheet" href="{% static "mezzanine_developer_extension/css/blog_custom_styles.css" %}">
+{% endblock %}
+
+
+{% block blog_post_detail_content %}
+{% editable blog_post.content %}
+	{{ blog_post.content|safe_developer:terminal_style }}
+{% endeditable %}
+{% endblock %}

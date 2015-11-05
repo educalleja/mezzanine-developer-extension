@@ -1,0 +1,10 @@
+<template tag="div" classes="terminal">
+	<div class="shell-wrap macos">
+	  <p class="shell-top-bar macos">__TITLE__</p>
+	  <ul class="shell-body macos">
+	    <ul>
+	    	__COMMANDS__
+	    </ul>
+	  </ul>
+	</div>
+</template>
