@@ -1,5 +1,5 @@
 .shell-wrap{
-  width: 100%;
+  width: 80%;
   margin: 10px auto 0 auto;
 }
 .macos.shell-wrap{
@@ -13,8 +13,6 @@
   border: 1px solid #eaeaea;
   border-top: none;
   border-radius: 8px 8px 0px 0px;
-  /*min-height: 200px;*/
-  width: 550px;
   margin: 0px auto;
   margin-top: 20px;
   background: #000;

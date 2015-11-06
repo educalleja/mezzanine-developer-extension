@@ -7,3 +7,4 @@ tags
 /build
 /dist
 mezzanine_developer_extension.egg-info/
+terminal_scripts
