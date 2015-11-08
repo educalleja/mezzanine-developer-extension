@@ -8,4 +8,6 @@ urlpatterns = patterns("mezzanine_developer_extension.views",
         name="get_preview"),
     url("mezzanine_developer_extension/check_format/$", "check_format",
         name="check_format"),
+    url("mezzanine_developer_extension/demo_form/$", "demo_form",
+        name="mzde_demo_form")
 )

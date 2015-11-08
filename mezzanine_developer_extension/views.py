@@ -1,8 +1,9 @@
 
 from django.http import HttpResponse, JsonResponse
-
+from django.shortcuts import render
 from mezzanine.conf import settings
 from mezzanine_developer_extension.utils import refactor_html, is_valid_xhtml
+from mezzanine_developer_extension.widgets import DemoForm
 
 def get_preview(request):
     """ View called to generate a preview of a blog post.
@@ -43,3 +44,9 @@ def check_format(request):
     preview_code, error_message = is_valid_xhtml(enveloped)
     return JsonResponse({'format_code': preview_code,
                          'error_message': error_message})
+
+
+def demo_form(request):
+    template_name = "mzz_dv_templates/widget_demo.html"
+    context_data = { 'form': DemoForm()}
+    return render(request, template_name, context=context_data)

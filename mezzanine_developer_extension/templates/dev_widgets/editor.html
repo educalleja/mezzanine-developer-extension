@@ -25,11 +25,18 @@
   <script type="text/javascript">
     $(document).ready(function () {
       // Do nothing when we are rendering the textarea outside the admin panel
-      if (typeof ADMIN_URL == 'undefined') return;
+      if (typeof ADMIN_URL == 'undefined' && ! {{ is_demo|lower }} ) return;
+      
       $("#btnAddPicture").click(function(){
+        {% if not is_demo %}
         // Opening media library popup. 
         mediaLibrary.open(developer_editor.addImageToEditor);
+        {% else %}
+          //On demo, we post a sample picture
+          developer_editor.addImageToEditor('/static/mezzanine_developer_extension/img/sample_img.jpg');
+        {% endif %}
       });
+      
       $("#btnPreview").click(developer_editor.preview_post);
       {% if check_xhtml %}
         // Checking xhtml only if the option is activated in settings.

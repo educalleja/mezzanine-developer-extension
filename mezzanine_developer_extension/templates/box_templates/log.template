@@ -1,0 +1,8 @@
+<template tag="div" classes="code">
+	<div class="log-wrap">
+		<div class="headertitle">Log</div>
+		<pre>
+		__LOGLINES__
+		</pre>
+	</div>
+</template>

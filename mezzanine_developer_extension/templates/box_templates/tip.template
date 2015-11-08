@@ -1,0 +1,11 @@
+<template tag="div" classes="tip">
+	<div class="tip-wrap">
+		<div class="headertitle">Did you know?</div>
+		<div class="tip-container">
+			<p class="title">__TIPTITLE__</p>
+			<div class="tiptext">
+				__TIPTEXT__
+			</div>
+		</div>
+	</div>
+</template>

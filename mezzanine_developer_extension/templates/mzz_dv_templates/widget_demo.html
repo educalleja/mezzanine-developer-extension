@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}
+Mezzanine-developer-extension
+{% endblock %}
+
+{% block extra_css %}{{ form.media }}{% endblock %}
+{% block meta_title %}Live demo{% endblock %}
+
+{% block main %}
+<h2>Live demo</h2>
+<p>Try the widget used to write blog posts when you have
+mezzanine-developer-extension installed in your mezzanine project.
+</p>
+<p>This demo is configured to refresh the preview and check the html format every 15 seconds.<br/>
+However, you can refresh manually the preview clicking on the magnifying glass.
+</p>
+<form action="{% url 'mzde_demo_form' %}" class="form-horizontal" method="post">
+{% csrf_token %}
+{{ form }}
+</form>
+{% endblock %}

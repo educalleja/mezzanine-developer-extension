@@ -1,0 +1,14 @@
+0.2
+--------------
+mezzanine_developer_extension available on github.
+
+Improvements:
+* CSS styles improved on terminal, code, log and tipbox.
+* Preview update and format checking only occurs when input text has been modified.
+* Added live demo.
+* Tested on safari, firefox and chrome.
+
+0.1
+--------------
+
+* This version was for personal use.

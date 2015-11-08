@@ -7,5 +7,5 @@ class RedirectViews(object):
         """ Replacing the response template when rendering a post detail.
         """
         if 'blog/blog_post_detail.html' in response.template_name:
-            response.template_name = "blog_custom/blog_post_detail.html"
+            response.template_name = "mzz_dv_templates/blog_post_detail.html"
         return response

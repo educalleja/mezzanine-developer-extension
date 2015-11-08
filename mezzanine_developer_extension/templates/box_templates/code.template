@@ -1,0 +1,8 @@
+<template tag="div" classes="code">
+	<div class="code-wrap">
+		<div class="headertitle">Code fragment</div>
+		<pre>
+		__CODELINES__
+		</pre>
+	</div>
+</template>

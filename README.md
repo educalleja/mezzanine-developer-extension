@@ -84,7 +84,7 @@ Quick start
 
 5. Include the app URLconf in your project urls.py like this::
 
-    `("^%s" % settings.BLOG_SLUG, include("mezzanine_developer_extension.urls")),`
+    `("^%s/" % settings.BLOG_SLUG, include("mezzanine_developer_extension.urls")),`
 
     **Important!**
   

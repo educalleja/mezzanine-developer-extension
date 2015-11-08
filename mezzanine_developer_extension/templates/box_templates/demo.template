@@ -1,0 +1,24 @@
+<h2>Terminal: </h2>
+<div class="terminal" title="john@~/">
+    <li>echo 'Hello World'</li>
+    <li class="nob">Hello World</li>
+</div>
+<h2>Log windows: </h2>
+<div class="log">
+[04/Nov/2015 13:42:05] "GET /" 200 420
+[04/Nov/2015 13:42:06] "GET /blog/ HTTP/1.1" 200 113
+[04/Nov/2015 13:42:08] "POST /blog/ HTTP/1.1" 200
+</div>
+<h2>Tip boxes: </h2>
+<div class="tipbox" title="Tip title!">
+      This is a tip box
+      Feel free to explain here your favourite tips!
+</div>
+<h2>Code divisions: </h2>
+<div class="code">
+    def foo():
+        if i == 0: 
+            return False
+        else:
+            return True
+</div>
