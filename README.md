@@ -124,6 +124,9 @@ Live example
 Find an example of a blog post written with the extension enabled on mezzanine on the following blog post:
 http://www.educalleja.es/blog/example-mezzanine-developer-extension
 
+Find a live demo of the blog post editor widget in the following web page:
+http://www.educalleja.es/blog/mezzanine_developer_extension/demo_form/
+
 License
 -------
 
