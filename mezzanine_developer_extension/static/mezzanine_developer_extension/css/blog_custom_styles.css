@@ -1,6 +1,7 @@
 .shell-wrap{
   width: 80%;
   margin: 10px auto 0 auto;
+  text-align: left;
 }
 .macos.shell-wrap{
   -webkit-border-radius: 3px;
@@ -152,6 +153,12 @@
   padding: 0 0 0 0px;
 }
 
+.code-wrap,.log-wrap, .tip-container{
+  text-align: left;
+}
+.code-wrap pre,.log-wrap pre{
+  margin-top: 5px;
+}
 .code-wrap pre,.log-wrap pre {
   font-family: monospace;
   background-color: #fff;
@@ -247,7 +254,7 @@
   border-radius: 4px;
   padding: 10px 10px 10px 60px;
   margin: 0 auto;
-  margin-top: 0px;
+  margin-top: 5px;
   margin-bottom: 2em;
   position: relative;
 }

@@ -1,3 +1,8 @@
+0.2.1
+--------------
+Bug fix:
+* CSS are not dependent any more of outer styles.
+
 0.2
 --------------
 mezzanine_developer_extension available on github.
