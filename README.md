@@ -14,7 +14,8 @@ Features:
 - Removes wysiwig editor from the blog post writing form.
 - Checks the html validity of the written blog post.
 - Preview area in the blog post writing form.
-- Add ubuntu and mac os terminal windows on your blog posts only writing a simple line of code.
+- Insert terminal shells (Ubuntu and Mac OS) by simple adding a few lines of HTML to a blog.
+- Code, Logs and Tipboxes using a few html tags.
 
 Requirements:
 

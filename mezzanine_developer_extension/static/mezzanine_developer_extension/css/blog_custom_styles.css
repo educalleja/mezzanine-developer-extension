@@ -27,6 +27,10 @@
   margin: 0;
 }
  
+.shell-body ul{
+  margin-left: 0px !important;
+}
+
 .macos.shell-top-bar{
   color: #525252;
   text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
