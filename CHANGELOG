@@ -1,3 +1,8 @@
+0.2.2
+--------------
+Improvement:
+* Added python shell tag to terminal views.
+
 0.2.1
 --------------
 Bug fix:

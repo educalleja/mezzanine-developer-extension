@@ -9,7 +9,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='mezzanine-developer-extension',
-    version='0.2.1',
+    version='0.2.2',
     packages=['mezzanine_developer_extension'],
     include_package_data=True,
     license='BSD License',
